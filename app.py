@@ -39,8 +39,14 @@ delete.grid(column=0, row=3)
 search = Button(window, text='Search')
 search.grid(column=1, row=3)
 
-# Listbox
+# Listbox with scroll
 listbox = Listbox(window, height=6, width=35)
 listbox.grid(column= 0, row=4, columnspan=2, rowspan=6)
+
+scroll = Scrollbar(window)
+scroll.grid(column=2, row=4, rowspan=6)
+
+listbox.configure(yscrollcommand=scroll.set)
+scroll.config(command=listbox.yview)
 
 window.mainloop()
