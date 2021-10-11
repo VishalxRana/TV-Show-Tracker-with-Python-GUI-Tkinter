@@ -56,9 +56,9 @@ def edit(id, name='', note=''):
 
 
 connect()
-# insert("Peaky Blinders", "Completed mate!")
+# insert("", "")
 print(view())
-# delete()
+# delete(2)
 
 # Should be able to search with only 'breaking' or 'bad'
 # Be able to search if entry is done in lower case. 
